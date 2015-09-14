@@ -30,7 +30,7 @@ public class ProxyTest {
 
 	@Test
 	public void testConnection() throws IOException {
-		proxy = proxyService.getProxy(true, "192.168.1.7", 8118);
+		proxy = proxyService.getProxy(true, "192.168.30.7", 8118);
 
 		URL url = new URL("http://p.p");
 		HttpURLConnection uc = (HttpURLConnection)url.openConnection(proxy);
@@ -49,7 +49,7 @@ public class ProxyTest {
 
 	@Test(expected=UnknownHostException.class)
 	public void testDisabled() throws IOException {
-		proxy = proxyService.getProxy(false, "192.168.1.7", 8118);
+		proxy = proxyService.getProxy(false, "192.168.30.7", 8118);
 
 		URL url = new URL("http://p.p/");
 		HttpURLConnection uc = (HttpURLConnection)url.openConnection(proxy);
