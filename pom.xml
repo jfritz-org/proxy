@@ -14,7 +14,19 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <build>
+    <scm>
+        <developerConnection>scm:git:https://github.com/jfritz-org/proxy.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Internal repo</name>
+            <url>file:///${project.basedir}/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
