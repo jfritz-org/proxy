@@ -1,4 +1,4 @@
-package de.robotniko.proxy.api;
+package org.jfritz.proxy.api;
 
 import java.net.Proxy;
 

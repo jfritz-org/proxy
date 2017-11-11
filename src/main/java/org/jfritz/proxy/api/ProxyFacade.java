@@ -1,6 +1,6 @@
-package de.robotniko.proxy.api;
+package org.jfritz.proxy.api;
 
-import de.robotniko.proxy.ProxyService;
+import org.jfritz.proxy.ProxyService;
 
 
 public class ProxyFacade {
